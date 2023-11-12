@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, red, blue);
+    background-size: 500%;
+    animation: move 7s infinite;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    min-height: 4vh;
+}
+
+footer {
+    min-height: 10vh;
+}
+.carousel-item {
+    height: 40vh;
+}
+
+#carouselExampleCaptions img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.history, .resumen {
+    width:  calc(100% - 2cm);
+    margin: auto;
+    display:flex;
+    margin-top: 30px;
+   
+}
+.txt, .resumen{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+}
+.video{
+    width: 100%;
+}
+.txt{
+    display: flex;
+    margin-left:5%;
+    margin-right: 5%;
+}
+
+
